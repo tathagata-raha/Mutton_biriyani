@@ -15,7 +15,7 @@ Identification of papers/websites/documents with context related to a given cont
 ```
 pip install -r requirements.txt
 python3 -m spacy download en
-python3 main.py
+python3 main.py abstract.csv text.csv 
 ```
 
 ## Inputs and Constraints
@@ -25,7 +25,7 @@ python3 main.py
 
 ## Outputs
 
-Returns/creates another similarity_matrix.csv which will have N rows and M columns where each cell (i,j) represents a similarity score between the abstract i and article j.  Each similarity score should be between 0 and 1: 1 being most similar and 0 being least similar.
+Returns/creates another similarity_matrix.csv which will have N rows and M columns where each cell (i,j) represents a similarity score between the abstract i and article j.  Each similarity score should be between 0 and 1.
 
 ## APPROACH TO SOLVE THE PROBLEM
 
@@ -61,7 +61,5 @@ Returns/creates another similarity_matrix.csv which will have N rows and M colum
 
 ### Generating the correlation matrix
 
-
-### Output
-
-The output correlation matrix is loaded on an qualcomm.csv file.
+- The correlation matrix is given by the similarity matrix.
+- The output correlation matrix is loaded on an qualcomm.csv file.
