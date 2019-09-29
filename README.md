@@ -63,3 +63,6 @@ Returns/creates another similarity_matrix.csv which will have N rows and M colum
 
 - The correlation matrix is given by the similarity matrix.
 - The output correlation matrix is loaded on an qualcomm.csv file.
+
+## TESTING DATA
+- We tested this model on a set of 70 document texts and 70 corresponding abstracts, which we obtained by web scraping from various sources.
