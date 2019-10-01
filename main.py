@@ -186,7 +186,7 @@ for text_values_array in [text_val]:
     for i in range(text.shape[0]):
         L.append(topic_generator(str(text_values_array[i][0]),abs_val))
 # print(L)
-
+print("Topic generated")
 numpy_array = numpy.asarray(L).transpose()
 #save to csv
 numpy.savetxt("similarity_matrix.csv", numpy_array, delimiter=",")
