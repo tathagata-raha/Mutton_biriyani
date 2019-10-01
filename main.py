@@ -190,6 +190,7 @@ for text_values_array in [text_val]:
 numpy_array = numpy.asarray(L).transpose()
 #save to csv
 numpy.savetxt("similarity_matrix.csv", numpy_array, delimiter=",")
+print("Done!!!")
 
 
 
